@@ -705,4 +705,4 @@ Deletes an existing workout.
     {
       "message": "Workout couldn't be found"
     }
-    `
+    ```

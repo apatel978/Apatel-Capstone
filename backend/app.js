@@ -24,15 +24,16 @@ app.use(
     })
 );
 
-app.use(
-    csurf({
-      cookie: {
-        secure: isProduction,
-        sameSite: isProduction && "Lax",
-        httpOnly: true
-      }
-    })
-);
+  app.use(
+      csurf({
+        cookie: {
+          secure: isProduction,
+          sameSite: isProduction && "Lax",
+          httpOnly: true
+        }
+      })
+  );
+
 
 const routes = require('./routes');
 app.use(routes);

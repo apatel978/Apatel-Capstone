@@ -5,13 +5,20 @@ import './Navigation.css';
 
 function Navigation({ isLoaded }) {
   const sessionUser = useSelector(state => state.session.user);
+  let link;
+
+  if (sessionUser) {
+    link = '/current'
+  } else {
+    link = '/'
+  }
 
   return (
     <div>
         <ul className="navbar">
             <li>
                 <div className="LogoDiv">
-                    <NavLink to="/" className='homeLink'>
+                    <NavLink to={link} className='homeLink'>
                         <span>Live Lavish</span>
                     </NavLink>
                 </div>

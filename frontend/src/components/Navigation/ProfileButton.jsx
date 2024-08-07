@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
 // import { NavLink } from "react-router-dom";
-import { AiFillProfile } from "react-icons/ai";
+// import { AiFillProfile } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import * as sessionActions from '../../store/session';
 import OpenModalMenuItem from "./OpenModalMenuItem";

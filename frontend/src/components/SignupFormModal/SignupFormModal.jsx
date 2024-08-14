@@ -14,7 +14,7 @@ function SignupFormModal() {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [errors, setErrors] = useState({});
   const { closeModal } = useModal();
-  console.log('hi')
+  console.log('hi');
 
   const handleSubmit = (e) => {
     e.preventDefault();

@@ -3,6 +3,8 @@ import { useDispatch } from "react-redux";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Dashboard from "./components/Dashboard";
+import LandingPage from "./components/LandingPage";
+import CreateNewGoal from "./components/Goals/CreateGoal/CreateGoalForm";
 import * as sessionActions from './store/session';
 
 function Layout() {
@@ -29,11 +31,15 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <h1>Welcome!</h1>
+        element: <LandingPage />
       },
       {
         path: '/current',
         element: <Dashboard />
+      },
+      {
+        path: 'goals/new',
+        element: <CreateNewGoal />
       }
     ]
   }

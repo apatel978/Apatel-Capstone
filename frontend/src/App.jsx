@@ -5,6 +5,7 @@ import Navigation from "./components/Navigation";
 import Dashboard from "./components/Dashboard";
 import LandingPage from "./components/LandingPage";
 import CreateNewGoal from "./components/Goals/CreateGoal/CreateGoalForm";
+import UpdateGoalForm from "./components/Goals/UpdateGoal/UpdateGoalForm";
 import * as sessionActions from './store/session';
 
 function Layout() {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: 'goals/new',
         element: <CreateNewGoal />
+      },
+      {
+        path: 'goals/:goalId/edit',
+        element: <UpdateGoalForm />
       }
     ]
   }

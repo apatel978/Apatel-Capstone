@@ -3,6 +3,7 @@ import { csrfFetch } from "./csrf";
 const GET_USER_GOALS = 'goal/GET_USER_GOALS';
 const GET_GOAL = 'goal/GET_GOAL';
 const DELETE_GOAL = 'goal/DELETE_GOAL';
+const UPDATE_GOAL = 'goal/UPDATE_GOAL';
 
 const getGoals = (goals) => ({
     type: GET_USER_GOALS,
@@ -17,6 +18,11 @@ const getOneGoal = (goal) => ({
 const deleteGoal = (id) => ({
     type: DELETE_GOAL,
     payload: id
+})
+
+const updateOneGoal = (id, goal) => ({
+    type: UPDATE_GOAL,
+    payload: {id, goal}
 })
 
 export const getUserGoals = () => async (dispatch) => {
@@ -54,6 +60,20 @@ export const addGoal = (goal) => async (dispatch) => {
     }
 }
 
+export const updateGoal = (goal, id) => async (dispatch) => {
+    const res = await csrfFetch(`/api/goals/${id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(goal)
+    });
+
+    if (res.ok) {
+        const updatedGoal = await res.json();
+        dispatch(updateOneGoal(id, updatedGoal));
+        return updatedGoal;
+    }
+}
+
 export const deleteAGoalById = (id) => async (dispatch) => {
     const res = await csrfFetch(`/api/goals/${id}`, {
         method: 'DELETE'
@@ -87,6 +107,12 @@ const goalsReducer = (state = initialState, action) => {
             newState.byId[goal.id] = goal;
             // console.log('SPOT ', spot);
             return newState;
+        }
+        case UPDATE_GOAL: {
+            const newState = structuredClone(state);
+            const {id, goal} = action.payload;
+            newState.byId[id] = goal;
+            return newState
         }
         case DELETE_GOAL: {
             const newState = structuredClone(state);

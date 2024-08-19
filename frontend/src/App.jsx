@@ -6,6 +6,8 @@ import Dashboard from "./components/Dashboard";
 import LandingPage from "./components/LandingPage";
 import CreateNewGoal from "./components/Goals/CreateGoal/CreateGoalForm";
 import UpdateGoalForm from "./components/Goals/UpdateGoal/UpdateGoalForm";
+import CreateNewWorkout from "./components/Workouts/CreateWorkout/CreateWorkoutForm";
+import UpdateWorkoutForm from "./components/Workouts/UpdateWorkout";
 import * as sessionActions from './store/session';
 
 function Layout() {
@@ -45,6 +47,14 @@ const router = createBrowserRouter([
       {
         path: 'goals/:goalId/edit',
         element: <UpdateGoalForm />
+      },
+      {
+        path: 'workouts/new',
+        element: <CreateNewWorkout />
+      },
+      {
+        path: 'workouts/:workoutId/edit',
+        element: <UpdateWorkoutForm />
       }
     ]
   }

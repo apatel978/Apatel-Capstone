@@ -4,8 +4,8 @@ body {
 
 .dashboard-container {
     padding: 20px;
-    font-family: 'Courier New', Courier, monospace; /* Retro font */
-    background-color: #4d4747; /* Light grey background */
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #4d4747;
 }
 
 .section-header {

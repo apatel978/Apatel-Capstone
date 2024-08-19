@@ -25,7 +25,6 @@ function Dashboard() {
 
     return (
         <div className="dashboard-container">
-            {/* <h1>Hello from your Dashboard!</h1> */}
             <div>
                 <div>
                     <div className="section-header">

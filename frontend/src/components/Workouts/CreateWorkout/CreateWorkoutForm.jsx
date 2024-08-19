@@ -51,10 +51,11 @@ function CreateNewWorkout() {
         const errors = {};
         if (!title) errors.title = "Title is required";
         if (!workout) errors.workout = "Workout is required";
+        if (!type) errors.type = "Type is required";
         if (description.length < 30) errors.description = "Description needs a minium of 30 characters";
 
         setErrors(errors);
-    }, [title, workout, description])
+    }, [title, workout, type, description])
 
     return (
         <>
@@ -70,6 +71,7 @@ function CreateNewWorkout() {
                             type='text'
                             placeholder="Workout Title"
                             value={title}
+                            required
                             onChange={e => setTitle(e.target.value)}
                         />
                     </label>
@@ -84,10 +86,11 @@ function CreateNewWorkout() {
                             // className="DescriptionTextArea"
                             placeholder="Workout"
                             value={workout}
+                            required
                             onChange={e => setWorkout(e.target.value)}
                         />
                     </label>
-                    {errors.details && hasSubmitted && <p className="errors">{errors.details}</p>}
+                    {errors.workout && hasSubmitted && <p className="errors">{errors.workout}</p>}
                 </div>
                 <div>
                     <label>
@@ -97,9 +100,11 @@ function CreateNewWorkout() {
                             type='text'
                             placeholder="Workout Type"
                             value={type}
+                            required
                             onChange={e => setType(e.target.value)}
                         />
                     </label>
+                    {errors.type && hasSubmitted && <p className="errors">{errors.type}</p>}
                 </div>
                 <div>
                     <label>
@@ -113,6 +118,7 @@ function CreateNewWorkout() {
                             onChange={e => setDescription(e.target.value)}
                         />
                     </label>
+                    {errors.description && hasSubmitted && <p className="errors">{errors.description}</p>}
                 </div>
                 <button type="submit">Create Workout</button>
             </form>

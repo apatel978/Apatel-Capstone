@@ -66,6 +66,7 @@ function CreateNewGoal() {
                             type='text'
                             placeholder="Goal Title"
                             value={goal}
+                            required
                             onChange={e => setGoal(e.target.value)}
                         />
                     </label>
@@ -80,6 +81,7 @@ function CreateNewGoal() {
                             // className="DescriptionTextArea"
                             placeholder="Please write at least 30 characters"
                             value={details}
+                            required
                             onChange={e => setDetails(e.target.value)}
                         />
                     </label>

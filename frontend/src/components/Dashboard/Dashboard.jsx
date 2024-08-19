@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import GoalTile from "../Goals/GoalTiles/GoalTile";
 import WorkoutTile from "../Workouts/WorkoutTiles/WorkoutTile";
 // import OpenModalButton from "../OpenModalButton";
+import './Dashboard.css'
 
 function Dashboard() {
     const dispatch = useDispatch();
@@ -23,30 +24,30 @@ function Dashboard() {
     }, [dispatch, isLoaded])
 
     return (
-        <div>
+        <div className="dashboard-container">
             {/* <h1>Hello from your Dashboard!</h1> */}
             <div>
                 <div>
-                    <div>
+                    <div className="section-header">
                         <span>Your Goals</span>
                         <button>
                             <Link to={`/goals/new`}>Create a New Goal!</Link>
                         </button>
                     </div>
-                    <div>
+                    <div className="tiles-container">
                         {Object.values(goals).map((goal) => (
                             <GoalTile key={`${goal.id}`} goal={goal}/>
                         ))}
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div className="workout-section">
+                    <div className="section-header">
                         <span>Your Workouts</span>
                         <button>
                             <Link to={`/workouts/new`}>Create a New Workout!</Link>
                         </button>
                     </div>
-                    <div>
+                    <div className="tiles-container">
                         {Object.values(workouts).map((workout) => (
                             <WorkoutTile key={`${workout.id}`} workout={workout}/>
                         ))}

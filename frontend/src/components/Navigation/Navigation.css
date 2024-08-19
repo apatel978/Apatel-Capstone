@@ -76,7 +76,7 @@
 .homeLink {
     justify-self: flex-start;
     text-decoration: none;
-    color: rgb(185, 137, 48);
+    color: #ff9800;
     display: flex;
     align-items: center;
 }

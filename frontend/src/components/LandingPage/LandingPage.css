@@ -1,0 +1,50 @@
+.recentUpdateTitle {
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.dashboardTitle {
+    color: #ff9800;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.updatesImageContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.styled-list-container {
+    background-color: #333; /* Dark background to match the theme */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    color: #fff; /* Light text color */
+    font-family: 'Courier New', Courier, monospace; /* Retro font */
+    margin: 20px; /* Space around the container */
+    max-width: 800px; /* Adjust width as needed */
+    margin: 20px auto; /* Center the container */
+}
+
+.styled-list-container ul {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0; /* Remove default padding */
+}
+
+.styled-list-container li {
+    background-color: #444; /* Slightly lighter background for list items */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 30px; /* Space between list items */
+    color: #ff9800; /* Slightly lighter orange accent for text */
+    font-size: 1.1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for items */
+    transition: transform 0.2s;
+}
+
+.styled-list-container li:hover {
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}

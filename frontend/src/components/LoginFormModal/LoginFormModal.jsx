@@ -33,32 +33,44 @@ function LoginFormModal() {
 
   return (
     <>
-      <h1>Log In</h1>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Username or Email
-          <input
-            type="text"
-            value={credential}
-            onChange={(e) => setCredential(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Password
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </label>
-        {errors.credential && (
-          <p>{errors.credential}</p>
-        )}
-        <button type="submit">Log In</button>
-        <button className='DemoLogin' onClick={demoLogin}>Demo User</button>
-      </form>
+    <div className='login-detail-container'>
+        <form onSubmit={handleSubmit}>
+          <h1 className='logInHead'>Log In</h1>
+          <div className='usernameInput'>
+            <label>
+              Username or Email
+              <input
+                type="text"
+                value={credential}
+                onChange={(e) => setCredential(e.target.value)}
+                required
+              />
+            </label>
+          </div>
+          <div>
+            <label className='usernameInput'>
+              Password
+              <input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
+            </label>
+          </div>
+          {errors.credential && (
+            <p>{errors.credential}</p>
+          )}
+          <div className='entryButtons'>
+            <button type="submit">Log In</button>
+            <button className='DemoLogin' onClick={demoLogin}>Demo User</button>
+          </div>
+        </form>
+      <span className="sp sp-t"></span>
+			<span className="sp sp-r"></span>
+			<span className="sp sp-b"></span>
+			<span className="sp sp-l"></span>
+    </div>
     </>
   );
 }

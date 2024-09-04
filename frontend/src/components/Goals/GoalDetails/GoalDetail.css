@@ -1,0 +1,16 @@
+.achievedDiv {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.achievedStatus {
+    text-align: center;
+}
+
+.no {
+    color: rgb(255, 64, 64);
+}
+
+.yes {
+    color: rgb(8, 230, 8);
+}

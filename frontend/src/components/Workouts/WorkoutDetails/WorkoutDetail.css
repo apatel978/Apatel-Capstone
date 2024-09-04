@@ -1,6 +1,6 @@
-.signup-detail-container {
+.goal-detail-container {
     background-color: #333;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
     /* padding: 20px;
@@ -11,14 +11,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 10px 30px 50px 30px;
+    padding: 30px 30px 30px 30px;
     border-radius: 8px;
-    width: 350px;
-    height: 450px;
+    width: 500px;
+    height: 320px;
     overflow: hidden;
 }
 
-.signup-detail-container h3 {
+.goal-detail-container h3 {
     font-size: 1.8rem;
     font-weight: bold;
     text-align: center;
@@ -26,13 +26,13 @@
     margin-bottom: 10px; /* Space below the title */
 }
 
-.signup-detail-container span {
+.goal-detail-container span {
     display: block;
     margin: 5px 0; /* Space between spans */
     font-size: 1.1rem;
 }
 
-.signup-detail-container .workout-description {
+.goal-detail-container .workout-description {
     background-color: #444;
     padding: 15px;
     border-radius: 5px;
@@ -147,22 +147,4 @@
 .actual-workout {
     text-align: center;
     padding-bottom: 20px;
-}
-
-.usernameInput {
-    margin-bottom: 20px;
-}
-
-.entryButtons {
-    display: flex;
-    justify-content: space-around;
-}
-
-.logInHead {
-    text-align: center;
-}
-
-.signupButton {
-    display: flex;
-    justify-content: center;
 }

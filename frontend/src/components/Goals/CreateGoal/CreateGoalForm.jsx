@@ -55,8 +55,8 @@ function CreateNewGoal() {
         <>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <span>Create a New Goal</span>
-                    <span>Start creating your steps to achieve your dreams!</span>
+                    <span className='formHeader'>Create a New Goal</span>
+                    <span className='inspirationalBlurb'>Start creating your steps to achieve your dreams!</span>
                 </div>
                 <div>
                     <label>
@@ -87,7 +87,9 @@ function CreateNewGoal() {
                     </label>
                     {errors.details && hasSubmitted && <p className="errors">{errors.details}</p>}
                 </div>
-                <button type="submit">Create Goal</button>
+                <div className="button-container">
+                    <button type="submit">Create Goal</button>
+                </div>
             </form>
         </>
     )

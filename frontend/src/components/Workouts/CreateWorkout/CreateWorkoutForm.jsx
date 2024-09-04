@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 // import { addGoal } from "../../../store/goal";
 import { addWorkout } from "../../../store/workout";
+import './CreateWorkout.css'
 
 function CreateNewWorkout() {
     const dispatch = useDispatch();
@@ -61,7 +62,7 @@ function CreateNewWorkout() {
         <>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <span>Create a New Workout</span>
+                    <span className='formHeader'>Create a New Workout</span>
                 </div>
                 <div>
                     <label>
@@ -120,7 +121,10 @@ function CreateNewWorkout() {
                     </label>
                     {errors.description && hasSubmitted && <p className="errors">{errors.description}</p>}
                 </div>
-                <button type="submit">Create Workout</button>
+                <div className="button-container">
+
+                    <button type="submit">Create Workout</button>
+                </div>
             </form>
         </>
     )

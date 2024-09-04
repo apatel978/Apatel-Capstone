@@ -1,0 +1,80 @@
+form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 800px; /* for adjusting form width */
+    margin: 20px auto;
+}
+
+form div {
+    margin-bottom: 40px;
+}
+
+form span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ff9800;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #ff9800;
+    box-shadow: 0 0 5px rgba(255, 152, 0, 0.5);
+}
+
+form .errors {
+    color: #ff5722;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+form button {
+    background-color: #ff9800;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background-color: #e68900;
+}
+
+.formHeader {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px;
+}
+
+.inspirationalBlurb {
+    text-align: center;
+    margin-bottom: 50px;
+}

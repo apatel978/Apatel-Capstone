@@ -13,6 +13,8 @@
     margin-top: 0px;
     margin-bottom: 10px;
     height: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 .createSpotLink {
@@ -59,7 +61,7 @@
 .profileButtonList {
     list-style-type: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #444;
     width: 200px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     right: -59%;
@@ -67,6 +69,7 @@
     border: 2px black solid;
     top: calc(100% + 5px);
     text-align: center;
+    color: #fff;
 }
 
 .ManageSpotsLink {
@@ -114,7 +117,7 @@
 
 .logoutButton {
     color: white;
-    background-color: gray;
+    background-color: #ff9800;
     width: 100px;
 }
 

@@ -71,7 +71,7 @@ function UpdateWorkoutForm() {
         <>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <span>Update Your Workout</span>
+                    <span className='formHeader'>Update Your Workout</span>
                 </div>
                 <div>
                     <label>
@@ -130,7 +130,9 @@ function UpdateWorkoutForm() {
                     </label>
                     {errors.description && hasSubmitted && <p className="errors">{errors.description}</p>}
                 </div>
-                <button type="submit">Update Workout</button>
+                <div className="button-container">
+                    <button type="submit">Update Workout</button>
+                </div>
             </form>
         </>
     )

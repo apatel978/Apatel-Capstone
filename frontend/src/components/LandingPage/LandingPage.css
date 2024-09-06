@@ -18,33 +18,69 @@
 }
 
 .styled-list-container {
-    background-color: #333; /* Dark background to match the theme */
+    background-color: #333;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    color: #fff; /* Light text color */
-    font-family: 'Courier New', Courier, monospace; /* Retro font */
-    margin: 20px; /* Space around the container */
-    max-width: 800px; /* Adjust width as needed */
-    margin: 20px auto; /* Center the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 .styled-list-container ul {
-    list-style-type: none; /* Remove default list bullets */
-    padding: 0; /* Remove default padding */
+    list-style-type: none;
+    padding: 0;
 }
 
 .styled-list-container li {
-    background-color: #444; /* Slightly lighter background for list items */
+    background-color: #444;
     padding: 15px;
     border-radius: 5px;
-    margin-bottom: 30px; /* Space between list items */
-    color: #ff9800; /* Slightly lighter orange accent for text */
+    margin-bottom: 30px;
+    color: #ff9800;
     font-size: 1.1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
 }
 
 .styled-list-container li:hover {
-    transform: translateY(-2px); /* Slight lift effect on hover */
+    transform: translateY(-2px);
+}
+
+.aboutApp {
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 250px;
+}
+
+.aboutContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+.aboutImgContainer {
+    margin-left: 80px;
+}
+
+.aboutImgContainer img {
+    width: 100%;
+    height: auto;
+    -webkit-mask-image:
+        linear-gradient(to right, transparent, black 20%, black 80%, transparent),
+        linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+    mask-image:
+        linear-gradient(to right, transparent, black 20%, black 80%, transparent),
+        linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+    -webkit-mask-composite: destination-in;
+    mask-composite: intersect;
+}
+
+.diffColor {
+    color: #ff9800;
 }

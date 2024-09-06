@@ -14,7 +14,7 @@
     margin-bottom: 10px;
     height: 80px;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .createSpotLink {

@@ -161,3 +161,9 @@
 .logInHead {
     text-align: center;
 }
+
+.error {
+    /* font-size: 20px; */
+    color: rgb(255, 64, 64);
+    font-weight: bold;
+}

@@ -35,21 +35,21 @@ module.exports = {
         desciption: "Bench press at 150lb, overhead press at 100, tricep dips with body weight, lateral raises at 20, cable fly at 60. Should hit between 8 and 12 reps before failure"
       },
       {
-        userId: 2,
+        userId: 1,
         title: 'Leg Day',
         workout: "Squats, Deadlifts, Leg Press, Lunges, Calf Raises, all 4 x 8-12",
         type: "Lower Body",
         desciption: "Squats at 200lb, deadlifts at 250, leg press at 300, lunges with 40lb dumbbells, calf raises at 200. Should hit between 8 and 12 reps before failure"
       },
       {
-        userId: 2,
+        userId: 3,
         title: 'Core Day',
         workout: "Planks, Russian Twists, Leg Raises, Bicycle Crunches, Sit-ups, all 4 x 15-20",
         type: "Core",
         desciption: "Planks for 1 minute, Russian twists with 20lb, leg raises with body weight, bicycle crunches with body weight, sit-ups with body weight. Should hit between 15 and 20 reps before failure"
       },
       {
-        userId: 3,
+        userId: 1,
         title: 'Cardio Day',
         workout: "Running, Cycling, Jump Rope, HIIT, Rowing, all 4 x 20-30 minutes",
         type: "Cardio",

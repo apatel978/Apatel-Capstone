@@ -55,6 +55,18 @@ module.exports = {
         goal: "Improve sleep quality",
         details: "Enhance sleep quality by establishing a consistent bedtime routine and minimizing screen time before bed",
         achieved: true,
+      },
+      {
+        userId: 1,
+        goal: "Increase flexibility",
+        details: "Incorporate a daily 15-minute stretching routine and attend a yoga class twice a week",
+        achieved: true,
+      },
+      {
+        userId: 1,
+        goal: "Build muscle mass",
+        details: "Follow a strength training program 5 times a week, focusing on compound movements and progressive overload",
+        achieved: false,
       }
     ])
   },

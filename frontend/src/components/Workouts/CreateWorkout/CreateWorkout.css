@@ -78,3 +78,7 @@ form button:hover {
     text-align: center;
     margin-bottom: 50px;
 }
+
+.workoutTitle {
+    font-size: 20px;
+}

@@ -66,7 +66,7 @@ function CreateNewWorkout() {
                 </div>
                 <div>
                     <label>
-                        <span>Workout Title</span>
+                        <span className="workoutTitle">Workout Title</span>
                         <span>Be sure to give your workout a clear and concise name!</span>
                         <input
                             type='text'
@@ -80,7 +80,7 @@ function CreateNewWorkout() {
                 </div>
                 <div>
                     <label>
-                        <span>What&apos;s your workout going to be?</span>
+                        <span className="workoutTitle">What&apos;s your workout going to be?</span>
                         <span>Include as many or as little exercises you like!</span>
                         <textarea
                             type='text'
@@ -95,7 +95,7 @@ function CreateNewWorkout() {
                 </div>
                 <div>
                     <label>
-                        <span>Workout Type</span>
+                        <span className="workoutTitle">Workout Type</span>
                         <span>Give your workout a type to categorize it!</span>
                         <input
                             type='text'
@@ -109,7 +109,7 @@ function CreateNewWorkout() {
                 </div>
                 <div>
                     <label>
-                        <span>Write some notes and give your workout a description!</span>
+                        <span className="workoutTitle">Write some notes and give your workout a description!</span>
                         <span>Rest times between exercises? The amount of weight? Give plenty of details for the best workout!</span>
                         <textarea
                             type='text'

@@ -60,7 +60,7 @@ function CreateNewGoal() {
                 </div>
                 <div>
                     <label>
-                        <span>Goal Name</span>
+                        <span className="workoutTitle">Goal Name</span>
                         <span>Be sure to give your goal a clear and concise name!</span>
                         <input
                             type='text'
@@ -74,7 +74,7 @@ function CreateNewGoal() {
                 </div>
                 <div>
                     <label>
-                        <span>Give some details about your goal</span>
+                        <span className="workoutTitle">Give some details about your goal</span>
                         <span>Mention specifics! What do you plan to do to improve? How often? Give plenty of details for yourself to follow!</span>
                         <textarea
                             type='text'

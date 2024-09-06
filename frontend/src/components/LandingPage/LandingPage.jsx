@@ -16,7 +16,7 @@ function LandingPage() {
                             <li>CSS Stylings have been made and applied - more refining coming soon!</li>
                             <li>Goals are fully operational! Make as many or as little as you like!</li>
                             <li>Workouts have been updated - make as many as you want and go all out with the details!</li>
-                            <li>Wanna know what food you should try? Meals and meal reviews are coming soon!</li>
+                            <li>Wanna know what types of food you should make? Meals and meal reviews are coming soon!</li>
                         </ul>
                     </div>
                 </div>

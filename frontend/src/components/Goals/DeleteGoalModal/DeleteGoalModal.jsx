@@ -21,12 +21,12 @@ const DeleteGoalModal = ({ goal }) => {
     }
 
     return (
-        <div>
-            <h2>Confirm Delete</h2>
-            <h3>Are you sure you want to remove this Goal?</h3>
-            <div>
-                <button onClick={handleYes}>Yes (Delete Goal)</button>
-                <button onClick={handleNo}>No (Keep Goal)</button>
+        <div className="deleteWorkoutContainer">
+            <h2 className="deleteTitle">Confirm Delete</h2>
+            <h3 className="dq">Are you sure you want to remove this Goal?</h3>
+            <div className="deleteButtonContainer">
+                <button className=' deleteYes yes' onClick={handleYes}>Yes (Delete Goal)</button>
+                <button className='deleteNo' onClick={handleNo}>No (Keep Goal)</button>
             </div>
         </div>
     )

@@ -1,0 +1,80 @@
+.deleteWorkoutContainer {
+    background-color: #333;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    /* padding: 20px;
+    margin: 20px;
+    max-width: 800;
+    margin: 20px auto; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 30px 30px 30px;
+    border-radius: 8px;
+    width: 600px;
+    height: 250px;
+    overflow: hidden;
+}
+
+/* .deleteWorkoutContainer button {
+    background-color: #ff9800;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    /* color: #fff; */
+    /* text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s; */
+/* } */
+
+.deleteYes:hover {
+    background-color: rgb(8, 200, 8);
+    cursor: pointer;
+}
+
+.deleteNo:hover {
+    background-color: rgb(230, 50, 50);
+    cursor: pointer;
+}
+
+.deleteTitle {
+    text-align: center;
+    color: #ff9800;
+}
+
+.dq {
+    text-align: center;
+}
+
+.deleteButtonContainer {
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.deleteYes {
+    background-color: rgb(8, 230, 8);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 240px;
+}
+
+.deleteNo {
+    background-color: rgb(255, 64, 64);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 240px;
+}

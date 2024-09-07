@@ -40,7 +40,7 @@ function LandingPage() {
                         {sessionUser && <span className='recentUpdateTitle'>Welcome {sessionUser.username}! Let&apos;s go to </span>}
                         {sessionUser && <Link to='/current' className='dashboardTitle'>Your Dashboard</Link>}
                     </div>
-                    <img className='loggedInQuote' src='https://i0.wp.com/amysenter.com/wp-content/uploads/2020/07/0C08FEC7-4A02-4793-8D46-33044D46BB53.jpeg?fit=723%2C303&ssl=1'/>
+                    {sessionUser && <img className='loggedInQuote' src='https://i0.wp.com/amysenter.com/wp-content/uploads/2020/07/0C08FEC7-4A02-4793-8D46-33044D46BB53.jpeg?fit=723%2C303&ssl=1'/>}
                 </div>
             </div>
         </div>
